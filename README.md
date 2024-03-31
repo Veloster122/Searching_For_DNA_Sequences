@@ -7,6 +7,17 @@ This file contains a script using Entrez API that allows the user to gather sequ
 - Allows the user to search a term to filter which sequences they want
 - outputs the retrieved sequence into a FASTA file.
 
+/// Pre-requisites
+
+- This program was tested using python3 and linux shell
+- you should have installed biopython: 'pip install biopython'
+- import SeqIO and Entrez API
+
+/// How does each function functions?
+
+- 'sequence_gather(database, term)': as its name says, 'sequence gather' will search sequences according by the
+database and term 
+
 /// How to use :D
 
 - open your terminal in the directory of Entrez.py document
