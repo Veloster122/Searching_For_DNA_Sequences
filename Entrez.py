@@ -14,10 +14,11 @@ def sequence_gather(database, term):
     handle = Entrez.efetch(db=database, id=id_list, rettype="fasta", retmode="text")
     sequences = list(SeqIO.parse(handle, "fasta"))
     return sequences
-
+    
 def display_sequences(sequences):
-    print(sequences)
+    SeqIO.write(sequences, sys.stdout, "fasta")
 
+    
 def main():
     """
     Main function to handle command-line arguments and retrieve sequences.
@@ -34,7 +35,5 @@ def main():
     Display = display_sequences(sequences)
     with open(output_file, "w") as f:
         SeqIO.write(sequences, f, "fasta")
-
 if __name__ == "__main__":
     main()
-
