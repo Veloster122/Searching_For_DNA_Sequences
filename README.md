@@ -15,8 +15,9 @@ This file contains a script using Entrez API that allows the user to gather sequ
 
 /// How does each function functions?
 
-- 'sequence_gather(database, term)': as its name says, 'sequence gather' will search sequences according by the
-database and term 
+- 'sequence_gather(database, term)': as its name says, 'sequence gather' will search sequences according the
+arguments: database and term
+    - Entrez.esearch: in this line, 
 
 /// How to use :D
 
