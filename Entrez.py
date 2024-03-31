@@ -15,6 +15,9 @@ def sequence_gather(database, term):
     sequences = list(SeqIO.parse(handle, "fasta"))
     return sequences
 
+def display_sequences(sequences):
+    print(sequences)
+
 def main():
     """
     Main function to handle command-line arguments and retrieve sequences.
@@ -28,7 +31,7 @@ def main():
     output_file = sys.argv[3]
 
     sequences = sequence_gather(database, search_term)
-
+    Display = display_sequences(sequences)
     with open(output_file, "w") as f:
         SeqIO.write(sequences, f, "fasta")
 
