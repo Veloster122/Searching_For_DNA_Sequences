@@ -10,7 +10,10 @@ This file contains a script using Entrez API that allows the user to gather sequ
 /// Pre-requisites
 
 - This program was tested using python3 and linux shell
-- you should have installed biopython: 'pip install biopython'
+- you should have installed biopython:
+  ´´´ bash
+  pip install biopython
+  ´´´
 - import SeqIO and Entrez API
 
 /// How does each function functions >:D?
